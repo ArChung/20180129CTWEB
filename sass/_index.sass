@@ -232,7 +232,9 @@ a:hover
 				padding-left: 25px
 				letter-spacing: .5rem
 				font-weight: bold
-				margin-top: 15px 	
+				margin-top: 15px 
+				&.mt_b
+					margin-top: 140px	
 			.btn
 				+bg('btn3.png')
 				display: block
@@ -245,26 +247,27 @@ a:hover
 #QABox 
 	background-color: #9fa0a0
 	+dTime
-	+phone 
-		max-height: 160px
-		overflow: hidden
-		position: relative
-		.openBtn
-			+bg('arr.png')
-			position: absolute
-			right: 0	
-			top: 45px
-			z-index: 2
+	// +phone 
+	max-height: 160px
+	overflow: hidden
+	position: relative
+	.openBtn
+		+bg('arr.png')
+		position: absolute
+		right: 0	
+		top: 35px
+		z-index: 2
 
-		&.open
-			max-height: 2000px	 
-			.openBtn 
-				+rotate(180deg)
+	&.open
+		max-height: 2000px	 
+		.openBtn 
+			+rotate(180deg)
 
 	.container 
 		+dTime
 		+pContainer	
-		padding: 70px 0		
+		padding: 60px 0		
+		position: relative
 		
 		.title
 			position: relative
@@ -291,7 +294,7 @@ a:hover
 					margin-top: 50px
 
 			.subContainer
-				margin-top: 35px
+				margin-top: 50px
 				letter-spacing: 0.2rem
 				.qBox
 					position: relative 

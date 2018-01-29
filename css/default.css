@@ -3570,6 +3570,9 @@ a:hover {
   font-weight: bold;
   margin-top: 15px;
 }
+.contentBox2 .container .swiper-container .s-txt.mt_b {
+  margin-top: 140px;
+}
 .contentBox2 .container .swiper-container .btn {
   width: 260px;
   height: 64px;
@@ -3589,31 +3592,27 @@ a:hover {
   -o-transition: all, 0.6s;
   -webkit-transition: all, 0.6s;
   transition: all, 0.6s;
+  max-height: 160px;
+  overflow: hidden;
+  position: relative;
 }
-@media screen and (max-width: 1024px) {
-  #QABox {
-    max-height: 160px;
-    overflow: hidden;
-    position: relative;
-  }
-  #QABox .openBtn {
-    width: 100px;
-    height: 100px;
-    background-image: url("../images/arr.png");
-    position: absolute;
-    right: 0;
-    top: 45px;
-    z-index: 2;
-  }
-  #QABox.open {
-    max-height: 2000px;
-  }
-  #QABox.open .openBtn {
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
+#QABox .openBtn {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/arr.png");
+  position: absolute;
+  right: 0;
+  top: 35px;
+  z-index: 2;
+}
+#QABox.open {
+  max-height: 2000px;
+}
+#QABox.open .openBtn {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 #QABox .container {
   -moz-transition: all, 0.6s;
@@ -3622,7 +3621,8 @@ a:hover {
   transition: all, 0.6s;
   max-width: 850px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 60px 0;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   #QABox .container {
@@ -3663,7 +3663,7 @@ a:hover {
   }
 }
 #QABox .container .qaContainer .subContainer {
-  margin-top: 35px;
+  margin-top: 50px;
   letter-spacing: 0.2rem;
 }
 #QABox .container .qaContainer .subContainer .qBox {
