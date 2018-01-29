@@ -244,9 +244,28 @@ a:hover
 
 #QABox 
 	background-color: #9fa0a0
+	+dTime
+	+phone 
+		max-height: 160px
+		overflow: hidden
+		position: relative
+		.openBtn
+			+bg('arr.png')
+			position: absolute
+			right: 0	
+			top: 45px
+			z-index: 2
+
+		&.open
+			max-height: 2000px	 
+			.openBtn 
+				+rotate(180deg)
+
 	.container 
+		+dTime
 		+pContainer	
 		padding: 70px 0		
+		
 		.title
 			position: relative
 			letter-spacing: 0.7rem
@@ -267,6 +286,9 @@ a:hover
 				margin: 0 auto
 				margin-top: 35px
 				display: block
+				+phone 
+					+bg('m_btn2.png')
+					margin-top: 50px
 
 			.subContainer
 				margin-top: 35px
@@ -302,18 +324,27 @@ a:hover
 			+clearfix
 			.pic 
 				+bg('ff1.png')
+				+phone 
+					+bg('m_ff1.png')
 			.btn
 				+bg('btn4.png')
 				float: right
 				margin-top: 25px
+				+phone	
+					+bg('m_btn4.png')
+					
 		.box3
 			+clearfix
 			.pic 
 				+bg('ff2.png')
+				+phone 
+					+bg('m_ff2.png')
 			.btn
 				+bg('btn5.png')
 				float: right
 				margin-top: 25px
+				+phone	
+					+bg('m_btn5.png')
 #footer
 	width: 100%
 	background-image: url(../images/f2.png)		

@@ -3585,8 +3585,41 @@ a:hover {
 
 #QABox {
   background-color: #9fa0a0;
+  -moz-transition: all, 0.6s;
+  -o-transition: all, 0.6s;
+  -webkit-transition: all, 0.6s;
+  transition: all, 0.6s;
+}
+@media screen and (max-width: 1024px) {
+  #QABox {
+    max-height: 160px;
+    overflow: hidden;
+    position: relative;
+  }
+  #QABox .openBtn {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/arr.png");
+    position: absolute;
+    right: 0;
+    top: 45px;
+    z-index: 2;
+  }
+  #QABox.open {
+    max-height: 2000px;
+  }
+  #QABox.open .openBtn {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 }
 #QABox .container {
+  -moz-transition: all, 0.6s;
+  -o-transition: all, 0.6s;
+  -webkit-transition: all, 0.6s;
+  transition: all, 0.6s;
   max-width: 850px;
   margin: 0 auto;
   padding: 70px 0;
@@ -3620,6 +3653,14 @@ a:hover {
   margin: 0 auto;
   margin-top: 35px;
   display: block;
+}
+@media screen and (max-width: 1024px) {
+  #QABox .container .qaContainer .btn {
+    width: 317px;
+    height: 70px;
+    background-image: url("../images/m_btn2.png");
+    margin-top: 50px;
+  }
 }
 #QABox .container .qaContainer .subContainer {
   margin-top: 35px;
@@ -3687,12 +3728,26 @@ a:hover {
   height: 228px;
   background-image: url("../images/ff1.png");
 }
+@media screen and (max-width: 1024px) {
+  #moreBox .container .box1 .pic {
+    width: 384px;
+    height: 286px;
+    background-image: url("../images/m_ff1.png");
+  }
+}
 #moreBox .container .box1 .btn {
   width: 119px;
   height: 70px;
   background-image: url("../images/btn4.png");
   float: right;
   margin-top: 25px;
+}
+@media screen and (max-width: 1024px) {
+  #moreBox .container .box1 .btn {
+    width: 167px;
+    height: 70px;
+    background-image: url("../images/m_btn4.png");
+  }
 }
 #moreBox .container .box3 {
   zoom: 1;
@@ -3711,12 +3766,26 @@ a:hover {
   height: 228px;
   background-image: url("../images/ff2.png");
 }
+@media screen and (max-width: 1024px) {
+  #moreBox .container .box3 .pic {
+    width: 315px;
+    height: 286px;
+    background-image: url("../images/m_ff2.png");
+  }
+}
 #moreBox .container .box3 .btn {
   width: 143px;
   height: 70px;
   background-image: url("../images/btn5.png");
   float: right;
   margin-top: 25px;
+}
+@media screen and (max-width: 1024px) {
+  #moreBox .container .box3 .btn {
+    width: 201px;
+    height: 70px;
+    background-image: url("../images/m_btn5.png");
+  }
 }
 
 #footer {

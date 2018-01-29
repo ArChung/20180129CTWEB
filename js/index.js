@@ -30,6 +30,10 @@ $(document).ready(function () {
         
     });
 
+    $('.openBtn').on('click',function(){
+        $("#QABox").toggleClass('open');
+    });
+
 })
 
 
