@@ -79,6 +79,11 @@ a:hover
 		padding: 70px 0
 		p 
 			margin-top: 50px
+		+phone
+			.f43
+				font-size: 3.8rem
+			.f24
+				font-size: 1.6rem
 .tabWrap
 	.container 
 		+pContainer 
@@ -199,11 +204,17 @@ a:hover
 				padding: 0 85px
 			.swiper-button-prev
 				top: 890px
+				+phone 
+					top: 834px
 			.swiper-button-next
 				top: 890px
+				+phone 
+					top: 834px
 			.slider-pagination
 				top: 880px
 				z-index: 8
+				+phone 
+					top: 825px
 				.swiper-pagination-bullet
 					height: 70px
 					background-color: transparent
@@ -268,6 +279,8 @@ a:hover
 						top: 0
 						left: 0
 						content: 'Q:'
+						+phone 
+							top: 5px
 				.aBox
 					position: relative 
 					padding: 0 30px
@@ -276,6 +289,8 @@ a:hover
 						top: 0
 						left: 0
 						content: 'A:'
+						+phone 
+							top: 5px
 
 #moreBox
 	.container

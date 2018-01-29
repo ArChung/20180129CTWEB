@@ -3288,6 +3288,14 @@ a:hover {
 .mainTitle .container p {
   margin-top: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .mainTitle .container .f43 {
+    font-size: 3.8rem;
+  }
+  .mainTitle .container .f24 {
+    font-size: 1.6rem;
+  }
+}
 
 .tabWrap .container {
   max-width: 850px;
@@ -3520,12 +3528,27 @@ a:hover {
 .contentBox2 .container .swiper-container .swiper-button-prev {
   top: 890px;
 }
+@media screen and (max-width: 1024px) {
+  .contentBox2 .container .swiper-container .swiper-button-prev {
+    top: 834px;
+  }
+}
 .contentBox2 .container .swiper-container .swiper-button-next {
   top: 890px;
+}
+@media screen and (max-width: 1024px) {
+  .contentBox2 .container .swiper-container .swiper-button-next {
+    top: 834px;
+  }
 }
 .contentBox2 .container .swiper-container .slider-pagination {
   top: 880px;
   z-index: 8;
+}
+@media screen and (max-width: 1024px) {
+  .contentBox2 .container .swiper-container .slider-pagination {
+    top: 825px;
+  }
 }
 .contentBox2 .container .swiper-container .slider-pagination .swiper-pagination-bullet {
   height: 70px;
@@ -3612,6 +3635,11 @@ a:hover {
   left: 0;
   content: "Q:";
 }
+@media screen and (max-width: 1024px) {
+  #QABox .container .qaContainer .subContainer .qBox:after {
+    top: 5px;
+  }
+}
 #QABox .container .qaContainer .subContainer .aBox {
   position: relative;
   padding: 0 30px;
@@ -3621,6 +3649,11 @@ a:hover {
   top: 0;
   left: 0;
   content: "A:";
+}
+@media screen and (max-width: 1024px) {
+  #QABox .container .qaContainer .subContainer .aBox:after {
+    top: 5px;
+  }
 }
 
 #moreBox .container {
