@@ -1,0 +1,311 @@
+
+html,body 
+	width: 100% 
+	height: 100%
+
+a:hover 
+	text-decoration: none
+
+.fw_b
+	font-weight: bold
+.grayTxt 
+	color: #221815
+.blueTxt
+	color: #0075c2
+=pContainer
+	max-width: 850px
+	margin: 0 auto
+	+phone 
+		max-width: 100%
+		padding-left: 25px
+		padding-right: 25px
+.clear
+	+clearfix	
+#header
+	width: 100%
+	height: 90px
+	background-color: #b5b6b6
+	position: relative
+	+phone 
+		height: auto
+	.container
+		width: 100%
+		margin: 0 auto
+		position: relative
+		.logo
+			+bg('logo.png')
+			position: absolute
+			top: 15px
+			left: 25px
+			z-index: 2
+			display: block
+			+phone 
+				left: 10px
+				top: 30px
+		.mainMenu
+			a
+				display: inline-block
+				padding: 0 20px
+				margin-top: 8px
+				&:not(:last-child)
+					position: relative
+					&:after 
+						content: '|'
+						color: white
+						position: absolute
+						right: -10px
+						top: 16px
+						+phone 
+							top: 30px
+				.pic 
+					display: inline-block
+					vertical-align: text-top
+					@for $i from 1 through 3
+						&.p_#{$i}
+							+bg('l#{$i}.png')
+					+phone 
+						display: block
+						margin: 0 auto
+				.txt
+					display: inline-block
+					vertical-align: text-top
+					line-height: 70px
+					+phone 
+						display: block
+						margin-top: -20px
+.mainTitle
+	.container
+		+pContainer
+		padding: 70px 0
+		p 
+			margin-top: 50px
+.tabWrap
+	.container 
+		+pContainer 
+		position: relative
+		max-width: 850px
+		+clearfix
+		.title
+			letter-spacing: 3rem
+			float: left
+			line-height: 63px
+			padding-left: 15px
+			+phone 
+				letter-spacing: 2rem
+				font-weight: bold
+			
+		.tagBox
+			display: inline-block
+			float: right
+			+clearfix
+			.tag
+				float: left
+				background-color: #9fa0a0
+				padding: 5px 20px
+				margin-left: 5px
+				+border-top-left-radius(15px)
+				+border-top-right-radius(15px)
+				cursor: pointer
+			.tag_1.active
+				background-color: #ed6c00
+			.tag_2.active
+				background-color: #6fba2c
+.videoWrap
+	width: 100%
+	+aspect-ratio(560,315)
+	position: relative
+	iframe 
+		position: absolute
+		top: 0
+		left: 0
+
+.swiper-container
+	.swiper-wrapper
+	.swiper-button-prev
+		+bg('left.png')
+		background-size: auto
+		top: 525px
+		left: 0
+		+phone 
+			top: 483px
+	.swiper-button-next
+		+bg('right.png')
+		background-size: auto
+		top: 525px
+		right: 0
+		+phone 
+			top: 483px
+	.slider-pagination
+		text-align: center
+		padding: 0 70px
+		position: absolute
+		bottom: auto
+		top: 570px
+		width: 100%
+		+phone 
+			top: 530px
+		.swiper-pagination-bullet
+			+border-radius(0px)
+			background-color: white
+			width: 33%
+			height: 4px
+			// &.swiper-pagination-bullet-active
+			// 	height: 4px
+
+.contentBox1
+	background-color: #ed6c00 
+	.container
+		+pContainer
+		padding: 70px 0
+		.swiper-container
+			.s-title
+				color: #fabe00
+				font-weight: bold
+				padding: 0 80px
+				margin-top: 20px
+				letter-spacing: .5rem
+				text-align: center
+			.btn
+				+bg('btn.png')
+				display: block
+				float: right
+				margin-top: 50px
+			.s-txt
+				padding-left: 25px
+				letter-spacing: .5rem
+				font-weight: bold
+				margin-top: 15px 
+		.wordingTxt
+			margin-top: 100px
+			padding: 0 25px
+				
+.contentBox2
+	background-color: #6fba2c
+	.container
+		+pContainer
+		padding: 70px 0
+		.swiper-container
+			.picWrap
+				width: 100%
+				+aspect-ratio(1,1)
+				position: relative	
+				+coverBg
+
+			.s-title
+				display: flex
+				justify-content: space-between
+				color: #009944
+				margin-top: 30px
+				padding: 0 85px
+			.swiper-button-prev
+				top: 890px
+			.swiper-button-next
+				top: 890px
+			.slider-pagination
+				top: 880px
+				z-index: 8
+				.swiper-pagination-bullet
+					height: 70px
+					background-color: transparent
+					position: relative
+					&:after 
+						content: ''
+						width: 100%
+						height: 4px
+						background-color: white
+						bottom: 0
+						left: 0
+						position: absolute
+
+			.s-txt
+				padding-left: 25px
+				letter-spacing: .5rem
+				font-weight: bold
+				margin-top: 15px 	
+			.btn
+				+bg('btn3.png')
+				display: block
+				float: right
+				margin-top: 50px
+		.wordingTxt
+			margin-top: 100px
+			padding: 0 25px
+
+#QABox 
+	background-color: #9fa0a0
+	.container 
+		+pContainer	
+		padding: 70px 0		
+		.title
+			position: relative
+			letter-spacing: 0.7rem
+			overflow: hidden
+			&:after 
+				content: ''
+				position: absolute
+				background-color: #fff
+				width: 75%
+				height: 2px
+				top: 50%
+				margin-top: -1px
+				left: 25%
+
+		.qaContainer
+			.btn
+				+bg('btn2.png')
+				margin: 0 auto
+				margin-top: 35px
+				display: block
+
+			.subContainer
+				margin-top: 35px
+				letter-spacing: 0.2rem
+				.qBox
+					position: relative 
+					padding: 0 30px
+					&:after 
+						position: absolute
+						top: 0
+						left: 0
+						content: 'Q:'
+				.aBox
+					position: relative 
+					padding: 0 30px
+					&:after 
+						position: absolute
+						top: 0
+						left: 0
+						content: 'A:'
+
+#moreBox
+	.container
+		+pContainer
+		display: flex
+		justify-content: space-around
+		padding: 70px 25px
+		.box1
+			+clearfix
+			.pic 
+				+bg('ff1.png')
+			.btn
+				+bg('btn4.png')
+				float: right
+				margin-top: 25px
+		.box3
+			+clearfix
+			.pic 
+				+bg('ff2.png')
+			.btn
+				+bg('btn5.png')
+				float: right
+				margin-top: 25px
+#footer
+	width: 100%
+	background-image: url(../images/f2.png)		
+	height: 105px		
+	position: relative
+	.pic
+		+bg('f1.png')		
+		position: absolute
+		top: 0
+		right: 0
