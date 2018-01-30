@@ -3484,10 +3484,12 @@ a:hover {
   padding-left: 25px;
   letter-spacing: 0.5rem;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 50px;
+  max-width: 520px;
+  float: left;
 }
 .contentBox1 .container .wordingTxt {
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 0 25px;
 }
 
@@ -3579,7 +3581,9 @@ a:hover {
   padding-left: 25px;
   letter-spacing: 0.5rem;
   font-weight: bold;
-  margin-top: 15px;
+  float: left;
+  max-width: 520px;
+  margin-top: 50px;
 }
 .contentBox2 .container .swiper-container .s-txt.mt_b {
   margin-top: 140px;
@@ -3593,7 +3597,7 @@ a:hover {
   margin-top: 50px;
 }
 .contentBox2 .container .wordingTxt {
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 0 25px;
 }
 
