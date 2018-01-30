@@ -3716,7 +3716,7 @@ a:hover {
   max-width: 850px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 70px 25px;
 }
 @media screen and (max-width: 1024px) {
@@ -3739,16 +3739,9 @@ a:hover {
   clear: both;
 }
 #moreBox .container .box1 .pic {
-  width: 305px;
-  height: 228px;
+  width: 372px;
+  height: 327px;
   background-image: url("../images/ff1.png");
-}
-@media screen and (max-width: 1024px) {
-  #moreBox .container .box1 .pic {
-    width: 384px;
-    height: 286px;
-    background-image: url("../images/m_ff1.png");
-  }
 }
 #moreBox .container .box1 .btn {
   width: 119px;
@@ -3777,16 +3770,9 @@ a:hover {
   clear: both;
 }
 #moreBox .container .box3 .pic {
-  width: 250px;
-  height: 228px;
+  width: 371px;
+  height: 327px;
   background-image: url("../images/ff2.png");
-}
-@media screen and (max-width: 1024px) {
-  #moreBox .container .box3 .pic {
-    width: 315px;
-    height: 286px;
-    background-image: url("../images/m_ff2.png");
-  }
 }
 #moreBox .container .box3 .btn {
   width: 143px;
