@@ -34,7 +34,18 @@ $(document).ready(function () {
         $("#QABox").toggleClass('open');
     });
 
+
+    $('.gotopBtn').on('click',function(){
+        ChungTool.pageScrollAni(0)
+    });
+
+    $('.gaBtn').on('click',function(){
+        javascript:ga('send', 'MenuBar', 'action', 'another');
+
+    })
+
 })
+
 
 
 

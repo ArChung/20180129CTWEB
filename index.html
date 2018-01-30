@@ -57,17 +57,17 @@
     <div id="header">
         <div class="container">
             <!-- <div class="logo"></div> -->
-            <a href="https://www.emome.net/home" class="logo"></a>
+            <a href="https://www.emome.net/home" class="logo" onclick="javascript:ga('send', 'MenuBar', 'action', 'another');"></a>
             <div class="mainMenu horizontal_menu right_menu wTxt f25">
-                <a href="#maincontent">
+                <a href="#maincontent" onclick="javascript:ga('send', 'MenuBar', 'action', 'strengths');">
                     <i class="pic p_1"></i>
                     <i class="txt"> 中華大4G優勢</i>
                 </a>
-                <a href="#QABox">
+                <a href="#QABox" onclick="javascript:ga('send', 'MenuBar', 'action', 'QandA');">
                     <i class="pic p_2"></i>
                     <i class="txt"> 常見問題</i>
                 </a>
-                <a href="#moreBox">
+                <a href="#moreBox" onclick="javascript:ga('send', 'MenuBar', 'action', 'another');">
                     <i class="pic p_3"></i>
                     <i class="txt"> 加值服務與涵蓋率查詢</i>
                 </a>
@@ -110,7 +110,7 @@
                                 allowfullscreen></iframe>
                         </div>
                         <div class="s-title f45">市話送很大 叫外送很實用</div>
-                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn"></a>
+                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn" onclick="javascript:ga('send',  'action', '4Gphone');"></a>
                         <div class="clear"></div>
                         <div class="s-txt f18">常幫老闆、同事訂飲料，
                             <br> 用手機打市話叫外送，還打錯電話?!
@@ -123,7 +123,7 @@
                                 allowfullscreen></iframe>
                         </div>
                         <div class="s-title f45">市話送很大 餐廳訂位很實用</div>
-                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn"></a>
+                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn" onclick="javascript:ga('send',  'action', '4Gphone');"></a>
                         <div class="clear"></div>
                         <div class="s-txt f18">其實這些都是市話，
                             <br> 原來你打的市話比你想得還多，
@@ -136,7 +136,7 @@
                                 allowfullscreen></iframe>
                         </div>
                         <div class="s-title f45">行動最大網 網內優惠實在享</div>
-                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn"></a>
+                        <a href="https://eshop.cht.com.tw/BasicPromo/big4g.html" target='_blank' class="btn" onclick="javascript:ga('send',  'action', '4Gphone');"></a>
                         <div class="clear"></div>
                         <div class="s-txt f18">如果對方是網外 小心你的電話帳單!
                             <br> 快用中華電信 行動最大網 怎麼打都是網內!
@@ -177,7 +177,7 @@
                             <div class="st wTxt">品質最優良</div>
                             <div class="st">優質好去處</div>
                         </div>
-                        <a href="http://3c.ltn.com.tw/news/32582" target='_blank' class="btn"></a>
+                        <a href="http://3c.ltn.com.tw/news/32582" target='_blank' class="btn" onclick="javascript:ga('send', 'action', 'LTN');"></a>
                         <div class="clear"></div>
                         <div class="s-txt f18">品質最優良，持續建設，
                             <br> 中華大4G涵蓋最廣。
@@ -212,7 +212,7 @@
     <div class="pageBox " id='QABox'>
         <div class="container wTxt">
             <div class="title f32 ">常見問題</div>
-            <div class="openBtn"></div>
+            <div class="openBtn" onclick="javascript:ga('action', 'open');"></div>
             <div class="qaContainer f18">
                 <div class="subContainer">
                     <div class="qBox">中華電信4CA對4G服務會有什麼影響？上網速率會比較快嗎？</div>
@@ -239,7 +239,7 @@
                     <div class="qBox">4G手機是否支援CA或4CA對上網速率有什麼不同？</div>
                     <div class="aBox">終端設備不具CA功能者，以單一門號上網測試，最高實測值可達140Mbps以上；而終端設備具備4CA功能者，以單一門號手機上網測試，最高實測值可達500Mbps以上，較現行4G行動上網速率倍數成長。</div>
                 </div>
-                <a href="https://lion.box.com/s/4pr34hy3l32vsx1pl9zfodls4vgufuwl" target='_blank' class="btn"></a>
+                <a href="https://lion.box.com/s/4pr34hy3l32vsx1pl9zfodls4vgufuwl" target='_blank' class="btn" onclick="javascript:ga('action', 'download');"></a>
             </div>
         </div>
 
@@ -248,14 +248,15 @@
         <div class="container">
             <div class="box1">
                 <div class="pic"></div>
-                <a href="https://www.emome.net/4g/4g_vas" target='_blank' class="btn"></a>
+                <a href="https://www.emome.net/4g/4g_vas" target='_blank' class="btn" onclick="javascript:ga('action', '4gVAS');"></a>
             </div>
             <div class="box3">
                 <div class="pic"></div>
-                <a href="https://www.emome.net/internet_coverage" target='_blank' class="btn"></a>
+                <a href="https://www.emome.net/internet_coverage" target='_blank' class="btn" onclick="javascript:ga('action', 'coverage');"></a>
             </div>
         </div>
     </div>
+    <div class="gotopBtn"></div>
     <div id="footer">
         <div class="pic"></div>
     </div>
