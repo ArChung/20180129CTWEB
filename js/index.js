@@ -39,10 +39,6 @@ $(document).ready(function () {
         ChungTool.pageScrollAni(0)
     });
 
-    $('.gaBtn').on('click',function(){
-        javascript:ga('send', 'MenuBar', 'action', 'another');
-
-    })
 
 })
 
